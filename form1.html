@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			Peer Graded Assignment p1
+		</title>
+	</head>
+	
+	<body>
+		<form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+		<h1>Please Enter Your Details For Our Dating Website! </h1>
+		
+		<fieldset>
+			<legend>
+				Your Face
+			</legend>
+				<label for="file">Your image:</label> 
+				<input type = "file" id="file" name="file" required>
+				<br>
+				<label for="preview">Image Preview:</label> 
+				<img id="preview" name="preview">
+		</fieldset>
+		
+		<fieldset>
+			<legend>
+				Your General Details
+			</legend>
+				<label for="name">Name:</label> 
+				<input type="text" id="name" name="name" placeholder="Your full name" required> <br>
+				<label for="gender">Gender:</label>
+				<input type="radio" id="gender" name="gender" required> Male <input type = "radio" name="gender" required> Female <br>
+				<label for="age">Age:</label> 
+				<input type="number" id="age" name="age" required> <br> 
+				<label for="dob">Date of birth:</label> 
+				<input type="date" id="dob" name="dob"> <br>
+				<label for="color">Favorite color:</label> 
+				<input type="color" id="color" name="color"> <br>
+				<label for="country">Which Country:</label>
+				<select id="country" name="country">
+				  <option value="noselection"></option>
+				  <option value="India">India</option>
+				  <option value="United States">United States of America</option>
+				  <option value="France">France</option>
+				  <option value="Russia">Russia</option>
+				  <option value="Australia">Australia</option>
+				</select>
+		</fieldset>
+		
+		<fieldset>
+			<legend>
+				Your Indicators
+			</legend>
+				<label for="height">Height:</label> 
+				Short <input type="range" min="0" max="100" value="50" step="5" id="height">Tall <br>
+				<label for="salary">Salary:</label>
+				Poor <input type="range" min="0" max="100" value="50" step="5" id="salary">Rich
+		</fieldset>
+		
+		<fieldset>
+			<legend>
+				Your Contact Information
+			</legend>
+				<label for="email"> Email:</label>
+				<input type="email" id="email" name="email" required><br>
+				<label for="mobile">Mobile: </label>
+				<input id="mobile" name="mobile" type="tel"> <br>
+				<label for="addr">Address:</label>
+				<textarea id="addr" name="addr" type="textarea" ></textarea><br>
+				<label>Method to contact you:<label>
+				<input type="checkbox" id="email" value="email"><label for="email">Email</label>
+				<input type="checkbox" id="whatsapp" value="whatsapp"><label for="whatsapp">Whatsapp</label>
+				<input type="checkbox" id="In-appchat" value="In-appchat"><label for="In-appchat">In-app chat</label>
+		</fieldset>
+			<br>
+			<input type="submit" name="submit">
+		</form>
+		<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+	</body>
+
+</html>
